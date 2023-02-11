@@ -135,3 +135,44 @@ h1,h2,h3 { /*Aplicar a todos*/
     align-items: flex-end; /*Alinear verticalmente hacia abajo*/
 }
 
+/* Servicio */
+
+@media (min-width: 768px) {
+    .servicios {
+        display: grid; /*El contenido se agrupa dentro de un area definida*/
+        grid-template-columns: 1fr 1fr 1fr; /*3 columnas que abarquen espacios iguales en el grid*/
+        /* grid-template-columns: repeat(3, 1fr); Alternativa */
+    
+        /* grid-template-rows: 200px 800px; codigo para rows */
+        /* grid: 200px 800px / 300px 300px; Otra forma de escribir el grid, primero filas y luego columnas */
+        column-gap: 2rem; /*Separacion entre columnas del grid*/
+    }
+    
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column; /*cambiando direccion defautl de flexbox*/
+    align-items: center;
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.servicio p{
+    line-height: 2;  /*Interlineado*/
+    text-align: center;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%; /*Haciendo circulo de fondo para iconos*/
+    /*Centrando los iconos*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
