@@ -111,44 +111,45 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </section>
         </div>
-    </main>
+    
 
     
-    <section>
-        <h2>Contacto</h2>
-        <form>
-            <fieldset>
-                <legend>Contáctame llenando todos los campos</legend>
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Tu nombre">
-                </div>
-                
-                <div>
-                    <label>Teléfono</label>
-                    <input type="tel" placeholder="Tu teléfono">
-                </div>
+        <section>
+            <h2>Contacto</h2>
+            <form class="formulario">
+                <fieldset>
+                    <legend>Contáctame llenando todos los campos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu nombre">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Tu teléfono">
+                        </div>
+                            
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu correo">
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>
                     
-                <div>
-                    <label>Correo</label>
-                    <input type="email" placeholder="Tu correo">
-                </div>
-                
-                <div>
-                    <label>Mensaje</label>
-                    <textarea></textarea>
-                </div>
 
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-                
-
-                
-
-            </fieldset>
-        </form>
-    </section>
+                </fieldset>
+            </form>
+        </section>
+    </main>
     
     <footer>
         <p>Todos los derechos reservados. Iker Casillas</p>
