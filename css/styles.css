@@ -10,6 +10,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box; /* Box model (Border box) hace que el padding no afecte al width y height de los elementos*/
+    scroll-snap-type: y mandatory; /*scroll snap de arriba hacia abajo*/
 }
 *, *::before, *::after { /*Esta linea es para colocarle el box sizing a todos los elementos */
     box-sizing: inherit;
@@ -156,7 +157,15 @@ h1,h2,h3 { /*Aplicar a todos*/
     align-items: flex-end; /*Alinear verticalmente hacia abajo*/
 }
 
-/* Servicio */
+/* Scroll snap */
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+/* Servicios */
 
 @media (min-width: 768px) {
     .servicios {
@@ -255,4 +264,9 @@ h1,h2,h3 { /*Aplicar a todos*/
     border: none;
     padding: 1.5rem;
     border-radius: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
 }
